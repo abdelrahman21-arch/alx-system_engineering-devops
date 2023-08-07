@@ -1,0 +1,1 @@
+First script prints any string onto console
