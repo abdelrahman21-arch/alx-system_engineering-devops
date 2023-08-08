@@ -1,0 +1,1 @@
+Frist script reads alias
