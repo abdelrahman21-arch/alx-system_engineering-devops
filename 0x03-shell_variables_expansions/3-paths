@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" "$PATH" | grep -o / | wc -w
+echo $((`tr -dc : <<<"$PATH" | wc -c`+1))
