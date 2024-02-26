@@ -1,0 +1,10 @@
+# This puppet manifest creates a file in the tmp dir.
+
+file{ 'tmp' :
+  path   => '/root/tmp/school',
+  ensure =>file,
+  owner =>'www-data',
+  group =>'www-data',
+  mode => '0744',
+  content =>'I love Puppet',
+}
