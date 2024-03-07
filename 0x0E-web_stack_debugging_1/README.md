@@ -1,0 +1,1 @@
+## configuring nginx to work om port 80
