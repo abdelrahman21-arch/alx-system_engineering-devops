@@ -1,0 +1,28 @@
+## Understanding What Happens When You Type www.google.com in Your Web Browser
+Have you ever wondered what exactly happens behind the scenes when you type "www.google.com" into your web browser's address bar? The process involves several key concepts in web technology, each playing a crucial role in delivering the requested web page to your screen. Let's explore what goes on step by step:
+
+# DNS Request
+The first thing your browser does is send a Domain Name System (DNS) request to a DNS server. This server translates the human-readable domain name "www.google.com" into an IP address, which is necessary for locating the server hosting Google's website.
+
+# TCP/IP
+Once the IP address is obtained, your browser initiates a Transmission Control Protocol (TCP) connection to the server using the Internet Protocol (IP). TCP/IP is the set of communication protocols used for transmitting data over the internet. It ensures that data packets are delivered reliably and in the correct order.
+
+Firewall
+Bef ore establishing the connection, the data packets pass through firewalls, which are network security systems designed to monitor and control incoming and outgoing traffic based on predetermined security rules. The firewall ensures that only legitimate connections are allowed while blocking potential threats.
+
+HTTPS/SSL
+If the website is secured with HTTPS (Hypertext Transfer Protocol Secure), which is indicated by the padlock icon in the browser's address bar, an additional step occurs. Your browser and the web server engage in a process called SSL (Secure Sockets Layer) handshake. This establishes a secure encrypted connection to protect sensitive data transmitted between your browser and the server.
+
+Load-Balancer
+Upon receiving the request, the server might pass it through a load balancer. Load balancers distribute incoming web traffic across multiple servers to ensure optimal resource utilization, improve responsiveness, and prevent overload on any single server. This helps maintain high availability and scalability for popular websites like Google.
+
+Web Server
+After passing through the load balancer (if applicable), the request reaches one of Google's web servers. These servers host the website's static content, such as HTML files, images, and CSS stylesheets. The web server processes the request, retrieves the requested files, and sends them back to your browser over the established TCP connection.
+
+Application Server
+For dynamic content or interactive features, the web server may communicate with an application server. Application servers execute server-side scripts, process database queries, and perform other tasks required to generate personalized or real-time content. In Google's case, this might involve executing complex algorithms for search queries or serving personalized ads.
+
+Database
+If the requested content requires data from a database, the application server queries the database server to retrieve the necessary information. Databases store structured data, such as user profiles, search results, or product listings. Google likely accesses vast databases to deliver relevant search results based on your query.
+
+In conclusion, typing "www.google.com" into your browser triggers a complex sequence of events involving DNS resolution, TCP/IP communication, security measures like firewalls and SSL, load balancing for scalability, web servers for static content, application servers for dynamic content, and databases for data retrieval. This intricate process seamlessly delivers the web page you requested, allowing you to search the vast depths of the internet with just a few keystrokes.
