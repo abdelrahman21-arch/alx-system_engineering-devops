@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ Export api to csv"""
 import csv
 import requests
