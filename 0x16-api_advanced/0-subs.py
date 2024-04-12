@@ -17,5 +17,4 @@ def number_of_subscribers(subreddit):
             return (0)
         return results.get("subscribers")
     except json.decoder.JSONDecodeError:
-        print("Failed to decode JSON data from response")
         return 0
